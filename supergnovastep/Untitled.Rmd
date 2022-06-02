@@ -1,0 +1,34 @@
+```{r}
+library(tidyverse)
+library(dplyr)
+```
+
+CANNABIS
+```{r}
+table <- read.table("/Users/irenecho/Desktop/final/supergnovastep/SUPERGNOVA corr/BALD_CANNABIS.txt", header= T, sep ="")
+
+
+
+table$corr <- format(table$corr, scientific = FALSE)
+head(table)
+table$corr <- sort(table$corr, decreasing = T)
+
+newtable <- subset(table, corr < 0.005)
+head(newtable)
+```
+
+SMOKING
+```{r}
+table <- read.table("/Users/irenecho/Desktop/final/supergnovastep/SUPERGNOVA corr/BALD_SMOKE.txt", header= T, sep ="")
+
+
+
+#table$p <- format(table$p, scientific = FALSE)
+head(table)
+table$p <- sort(table$p, decreasing = T)
+
+newtable <- subset(table, p < 0.005)
+head(newtable)
+
+```
+
