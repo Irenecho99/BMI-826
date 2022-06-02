@@ -1,0 +1,20 @@
+
+```{r}
+library(dplyr)
+
+#read the .gz file
+table <- read.table("/Users/irenecho/Desktop/final/mpb_bolt_lmm_aut_x.clean.tab.gz", header = T, sep= '\t')
+
+#omit columns that are unnecessary
+table <- select(table, -c(GENPOS, A1FREQ, F_MISS, P_BOLT_LMM, SNP))
+
+#re-create SNP column with CHR:BP
+table$SNP <- paste0(table$CHR, ":" ,table$BP)
+
+#write the table with .txt file
+write.table(table, file = "cleanedtable.txt", sep = "\t", row.names = F, quote = F)
+
+
+head(table)
+```
+
