@@ -3,7 +3,7 @@
 
 European Male Baldness and its relation to Genetics
 
-Tool Used:
+Programs Used:
 
 1. LDSC : https://github.com/bulik/ldsc
 
