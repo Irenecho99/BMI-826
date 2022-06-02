@@ -1,2 +1,3 @@
 # BMI-826
-Biostatistics and Biomedical Informatics - Genetics
+Final Project of Biostatistics and Biomedical Informatics - Genetics
+European Male Baldness and its relation to Genetics
