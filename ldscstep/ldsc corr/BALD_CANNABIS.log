@@ -1,0 +1,65 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--ref-ld-chr /Users/irenecho/Desktop/BMI/HW4-selected/ldsc_inputs/for_h2/eur_w_ld_chr/ \
+--out /Users/irenecho/Desktop/final/ldscstep/corr \
+--rg /Users/irenecho/Desktop/final/ldscstep/step1/bald/baldness.step1.sumstats.gz,/Users/irenecho/Desktop/final/ldscstep/step1/cannabis/cannabisstep1.sumstats.gz \
+--w-ld-chr /Users/irenecho/Desktop/BMI/HW4-selected/ldsc_inputs/for_h2/eur_w_ld_chr/ 
+
+Beginning analysis at Tue May  3 21:31:59 2022
+Reading summary statistics from /Users/irenecho/Desktop/final/ldscstep/step1/bald/baldness.step1.sumstats.gz ...
+Read summary statistics for 1167696 SNPs.
+Reading reference panel LD Score from /Users/irenecho/Desktop/BMI/HW4-selected/ldsc_inputs/for_h2/eur_w_ld_chr/[1-22] ... (ldscore_fromlist)
+Read reference panel LD Scores for 1293150 SNPs.
+Removing partitioned LD Scores with zero variance.
+Reading regression weight LD Score from /Users/irenecho/Desktop/BMI/HW4-selected/ldsc_inputs/for_h2/eur_w_ld_chr/[1-22] ... (ldscore_fromlist)
+Read regression weight LD Scores for 1293150 SNPs.
+After merging with reference panel LD, 1139643 SNPs remain.
+After merging with regression SNP LD, 1139643 SNPs remain.
+Computing rg for phenotype 2/2
+Reading summary statistics from /Users/irenecho/Desktop/final/ldscstep/step1/cannabis/cannabisstep1.sumstats.gz ...
+Read summary statistics for 1217311 SNPs.
+After merging with summary statistics, 1139643 SNPs remain.
+1077415 SNPs with valid alleles.
+
+Heritability of phenotype 1
+---------------------------
+Total Observed scale h2: 0.3285 (0.0348)
+Lambda GC: 1.4926
+Mean Chi^2: 2.5958
+Intercept: 1.227 (0.052)
+Ratio: 0.1422 (0.0326)
+
+Heritability of phenotype 2/2
+-----------------------------
+Total Observed scale h2: 0.0188 (0.0018)
+Lambda GC: 1.1113
+Mean Chi^2: 1.1219
+Intercept: 0.9896 (0.0069)
+Ratio < 0 (usually indicates GC correction).
+
+Genetic Covariance
+------------------
+Total Observed scale gencov: -0.0005 (0.0022)
+Mean z1*z2: -0.0108
+Intercept: -0.007 (0.007)
+
+Genetic Correlation
+-------------------
+Genetic Correlation: -0.0061 (0.0281)
+Z-score: -0.2174
+P: 0.8279
+
+
+Summary of Genetic Correlation Results
+                                                                           p1                                                                               p2      rg      se       z       p  h2_obs  h2_obs_se  h2_int  h2_int_se  gcov_int  gcov_int_se
+ /Users/irenecho/Desktop/final/ldscstep/step1/bald/baldness.step1.sumstats.gz  /Users/irenecho/Desktop/final/ldscstep/step1/cannabis/cannabisstep1.sumstats.gz -0.0061  0.0281 -0.2174  0.8279  0.0188     0.0018  0.9896     0.0069    -0.007        0.007
+
+Analysis finished at Tue May  3 21:32:14 2022
+Total time elapsed: 14.68s

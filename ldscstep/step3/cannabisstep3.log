@@ -1,0 +1,37 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--h2 /Users/irenecho/Desktop/final/ldscstep/step1/cannabis/cannabisstep1.sumstats.gz \
+--ref-ld-chr /Users/irenecho/Desktop/BMI/HW4-selected/ldsc_inputs/for_enrichment/GenoSkylinePlus/GSplus_Tier3_1KGphase3. \
+--out /Users/irenecho/Desktop/final/ldscstep/step3 \
+--overlap-annot  \
+--frqfile-chr /Users/irenecho/Desktop/BMI/HW4-selected/ldsc_inputs/for_enrichment/genotype/1000G.EUR.QC. \
+--w-ld-chr /Users/irenecho/Desktop/BMI/HW4-selected/ldsc_inputs/for_enrichment/weights/weights.hm3_noMHC. 
+
+Beginning analysis at Wed May  4 01:22:04 2022
+Reading summary statistics from /Users/irenecho/Desktop/final/ldscstep/step1/cannabis/cannabisstep1.sumstats.gz ...
+Read summary statistics for 1114164 SNPs.
+Reading reference panel LD Score from /Users/irenecho/Desktop/BMI/HW4-selected/ldsc_inputs/for_enrichment/GenoSkylinePlus/GSplus_Tier3_1KGphase3.[1-22] ... (ldscore_fromlist)
+Read reference panel LD Scores for 1190321 SNPs.
+Removing partitioned LD Scores with zero variance.
+Reading regression weight LD Score from /Users/irenecho/Desktop/BMI/HW4-selected/ldsc_inputs/for_enrichment/weights/weights.hm3_noMHC.[1-22] ... (ldscore_fromlist)
+Read regression weight LD Scores for 1187349 SNPs.
+After merging with reference panel LD, 1109918 SNPs remain.
+After merging with regression SNP LD, 1107245 SNPs remain.
+Removed 0 SNPs with chi^2 > 357.072 (1107245 SNPs remain)
+Total Observed scale h2: 0.0059 (0.0012)
+Categories: GenoCanyon10KL2_0 Mononuclear_cells_from_peripheral_bloodL2_0 T_cells_CD3+L2_0 T_cells_effector/memory_CD4+_CD25int_CD127+L2_0 T_regulatory_cells_CD4+_CD25+_CD127-L2_0 T_helper_cells_CD4+_CD25-L2_0 T_helper_naive_cells_CD4+_CD25-_CD45RA+L2_0 T_helper_cells_PMA-I_stimulated_CD4+_CD25-_IL17-L2_0 T_helper_17_cells_PMA-I_stimulated_CD4+_CD25-_IL17+L2_0 T_helper_memory_cells_CD4+_CD25-_CD45RO+L2_0 T_helper_memory_cells_from_peripheral_blood_CD4+L2_0 T_memory_cells_CD8+L2_0 T_helper_naive_cells_CD4+L2_0 T_naive_cells_CD8+L2_0 Monocytes_CD14+L2_0 Hematopoietic_stem_cells_G-CSF-mobilized_CD34+L2_0 B_cells_CD19+L2_0 Natural_killer_cells_CD56+L2_0 GM12878_lymphoblastoid_cellsL2_0 ThymusL2_0 SpleenL2_0 Brain_hippocampus_middleL2_0 Brain_substantia_nigraL2_0 Brain_anterior_caudateL2_0 Brain_cingulate_gyrusL2_0 Brain_inferior_temporal_lobeL2_0 Brain_angular_gyrusL2_0 Brain_dorsolateral_prefrontal_cortexL2_0 NH-A_astrocytesL2_0 LungL2_0 NHLF_lung_fibroblast_primary_cellsL2_0 AortaL2_0 Right_atriumL2_0 Left_ventricleL2_0 Right_ventricleL2_0 Muscle_satellite_cultured_cellsL2_0 Psoas_muscleL2_0 Skeletal_muscleL2_0 HSMM_skeletal_muscle_myoblasts_cellsL2_0 HSMM_cell_derived_skeletal_muscle_myotubes_cellsL2_0 Stomach_smooth_muscleL2_0 Duodenum_smooth_muscleL2_0 Colon_smooth_muscleL2_0 Rectal_smooth_muscleL2_0 EsophagusL2_0 GastricL2_0 Stomach_mucosaL2_0 Duodenum_mucosaL2_0 Small_intestineL2_0 Sigmoid_colonL2_0 Colonic_mucosaL2_0 Rectal_mucosaL2_0 PancreasL2_0 Pancreatic_isletsL2_0 LiverL2_0 Adipose_nucleiL2_0 Adipose_derived_mesenchymal_stem_cell_cultured_cellsL2_0 Mesenchymal_stem_cell_derived_adipocyte_cultured_cellsL2_0 Mesenchymal_stem_cell_derived_chondrocyte_cultured_cellsL2_0 Bone_marrow_derived_cultured_mesenchymal_stem_cellsL2_0 Osteoblast_primary_cellsL2_0 NHDF-Ad_adult_dermal_fibroblast_primary_cellsL2_0 NHEK-epidermal_keratinocyteprimary_cellsL2_0 Breast_myoepithelial_primary_cellsL2_0 Breast_variant_human_mammary_epithelial_cells_(vHMEC)L2_0 HMEC_mammary_epithelial_primary_cellsL2_0 OvaryL2_0
+Lambda GC: 1.1082
+Mean Chi^2: 1.1181
+Intercept: 1.0415 (0.0067)
+Ratio: 0.3509 (0.0564)
+Reading annot matrix from /Users/irenecho/Desktop/BMI/HW4-selected/ldsc_inputs/for_enrichment/GenoSkylinePlus/GSplus_Tier3_1KGphase3.[1-22] ... (annot)
+Results printed to /Users/irenecho/Desktop/final/ldscstep/step3.results
+Analysis finished at Wed May  4 01:23:56 2022
+Total time elapsed: 1.0m:51.27s

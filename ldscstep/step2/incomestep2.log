@@ -1,0 +1,32 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--h2 /Users/irenecho/Desktop/final/ldscstep/step1/income/incomestep1.sumstats.gz \
+--ref-ld-chr /Users/irenecho/Desktop/BMI/HW4-selected/ldsc_inputs/for_h2/eur_w_ld_chr/ \
+--out /Users/irenecho/Desktop/final/ldscstep/step2 \
+--w-ld-chr /Users/irenecho/Desktop/BMI/HW4-selected/ldsc_inputs/for_h2/eur_w_ld_chr/ 
+
+Beginning analysis at Tue May  3 20:07:19 2022
+Reading summary statistics from /Users/irenecho/Desktop/final/ldscstep/step1/income/incomestep1.sumstats.gz ...
+Read summary statistics for 1211184 SNPs.
+Reading reference panel LD Score from /Users/irenecho/Desktop/BMI/HW4-selected/ldsc_inputs/for_h2/eur_w_ld_chr/[1-22] ... (ldscore_fromlist)
+Read reference panel LD Scores for 1293150 SNPs.
+Removing partitioned LD Scores with zero variance.
+Reading regression weight LD Score from /Users/irenecho/Desktop/BMI/HW4-selected/ldsc_inputs/for_h2/eur_w_ld_chr/[1-22] ... (ldscore_fromlist)
+Read regression weight LD Scores for 1293150 SNPs.
+After merging with reference panel LD, 1181696 SNPs remain.
+After merging with regression SNP LD, 1181696 SNPs remain.
+Using two-step estimator with cutoff at 30.
+Total Observed scale h2: 0.0745 (0.0032)
+Lambda GC: 1.3615
+Mean Chi^2: 1.4498
+Intercept: 1.0358 (0.0081)
+Ratio: 0.0796 (0.0179)
+Analysis finished at Tue May  3 20:07:29 2022
+Total time elapsed: 9.9s
